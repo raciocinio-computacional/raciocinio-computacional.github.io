@@ -1,16 +1,19 @@
 page-home {
-
     .card-background-page {
+        img{
+          width: 100%;
+          height: 100%;
+        }
 
         ion-card {
           position: relative;
           text-align: center;
-          height: 250px;;
+          height: 250px;
         }
       
         .card-title {
           position: absolute;
-          top: 65%;
+          top: 85%;
           font-size: 2.0em;
           width: 100%;
           font-weight: bold;
@@ -26,9 +29,6 @@ page-home {
           color: #fff;
           text-shadow: 2px 2px #000;
         }
-      
       }
-
 }
-
 
