@@ -1,14 +1,45 @@
 <ion-header>
   <ion-navbar>
     <ion-title>
-      Ionic Blank
+      Ajuda
     </ion-title>
   </ion-navbar>
 </ion-header>
 
-<ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
+<ion-content class="card-background-page">
+
+  <ion-card (click)="goToAtendimento()">
+    <!-- <img src="assets/imgs/atendimento.jpg" /> -->
+    <div class="card-title">Individual</div>
+    <!-- <div class="card-subtitle">ATENDIMENTO GRATÚITO</div> -->
+  </ion-card>
+
+
+  <ion-card (click)="goToBook()">
+    <!-- <img src="assets/imgs/livro.jpg" /> -->
+    <div class="card-title">Grupal</div>
+    <!-- <div class="card-subtitle">URGÊNCIAS TERAPÊUTICAS INTEGRATIVAS</div> -->
+  </ion-card>
+
+  <!-- <a href="https://play.google.com/store/apps/details?id=com.gmail.appsdmtech.cromoterapia"> -->
+  <ion-card>
+    <!-- <img src="assets/imgs/casal.jpg" /> -->
+    <div class="card-title">Familiar</div>
+    <!-- <div class="card-subtitle">CROMOTERAPIA PRÁTICA</div> -->
+  </ion-card>
+  <!-- </a> -->
+
+
+  <ion-card>
+    <img src="assets/imgs/casal.jpg" />
+    <div class="card-title">Conjugal</div>
+    <!-- <div class="card-subtitle">Prof. Dr. Norberto Pinto</div> -->
+  </ion-card>
+
+
+
+
+
+
+
 </ion-content>
