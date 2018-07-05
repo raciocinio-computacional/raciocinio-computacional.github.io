@@ -7,11 +7,13 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import { LocalServiceProvider } from '../providers/local-service/local-service';
+import { LocaisPage } from '../pages/locais/locais';
 
 @NgModule({
   declarations: [
     MyApp,
-    HomePage
+    HomePage,
+    LocaisPage
   ],
   imports: [
     BrowserModule,
@@ -20,7 +22,8 @@ import { LocalServiceProvider } from '../providers/local-service/local-service';
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
-    HomePage
+    HomePage,
+    LocaisPage
   ],
   providers: [
     StatusBar,

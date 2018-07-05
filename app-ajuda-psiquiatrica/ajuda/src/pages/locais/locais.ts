@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { LocalServiceProvider } from '../../providers/local-service/local-service';
 
 /**
  * Generated class for the LocaisPage page.
@@ -15,11 +16,17 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 })
 export class LocaisPage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  servico: String;
+  locais: any;
+
+  constructor(public navCtrl: NavController, public navParams: NavParams, private localService: LocalServiceProvider) {
+    this.servico = this.navParams.get('servico');
   }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad LocaisPage');
+    this.locais = this.localService.obterEstabelecimentosPorServico(this.servico)
+    console.log(this.locais);
   }
 
 }
