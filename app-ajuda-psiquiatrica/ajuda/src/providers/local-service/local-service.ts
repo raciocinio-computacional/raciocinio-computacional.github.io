@@ -47,5 +47,24 @@ export class LocalServiceProvider {
     return estabelecimentos;
   }
 
+  obterEstabelecimentosPorServico(servicoDesejado: String): any {
+    servicoDesejado = servicoDesejado.toLowerCase();
+    let estabelecimentos = this.obterEstabelecimentos();
+
+    let estabelecimentosEncontrados = [];
+
+
+    estabelecimentos.forEach(estabelecimento => {
+      estabelecimento.servs.forEach(servico => {
+         servico = servico.toLowerCase();         
+         if(servicoDesejado == servico){
+          estabelecimentosEncontrados.push(estabelecimento)
+         }
+      });
+    });
+
+    return  estabelecimentosEncontrados;
+
+  }
 
 }

@@ -10,7 +10,7 @@ import { LocalServiceProvider } from '../../providers/local-service/local-servic
 export class HomePage {
 
   constructor(public navCtrl: NavController, public locais: LocalServiceProvider) {
-    console.log(locais.obterEstabelecimentos());
+    console.log(locais.obterEstabelecimentosPorServico("Grupo para crianças"));
 
   }
 
