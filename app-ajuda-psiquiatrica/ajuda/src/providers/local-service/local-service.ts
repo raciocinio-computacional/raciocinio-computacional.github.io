@@ -1,5 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
+import { Locais } from '../../models/locais';
+
 
 /*
   Generated class for the LocalServiceProvider provider.
@@ -10,12 +12,40 @@ import { Injectable } from '@angular/core';
 @Injectable()
 export class LocalServiceProvider {
 
-  constructor(public http: HttpClient) {
+  constructor() {
     console.log('Hello LocalServiceProvider Provider');
   }
 
-  obterLocais(){
-    
+  obterEstabelecimentos(): any {
+   
+    let s = {
+      "i": "Psicoterapia individual",
+      "g": "Psicoterapia de Grupo",
+      "f": "Psicoterapia Familiar",
+      "c": "Psicoterapia Conjugal",
+      "o": "Orientação Profissional",
+      "gc": "Grupo para crianças",
+      "ga": "Grupo para adolescentes"
+    }
+
+    let estabelecimentos = [
+      {
+        nome: "Instituto de Saúde da Faculdade Unijorge",
+        end: "Av. Luís Viana Filho, 6775, Paralela",
+        tel: "3206-8015",
+        valor: "Gratuito",
+        servs: [s.i, s.g]
+      },
+      {
+        nome: "Faculdade da Cidade do Salvador (FACS)",
+        end: "Av. Estados Unidos, 37, 3° andar, Comércio",
+        tel: "3254-6916/6943",
+        valor: "Gratuito",
+        servs: [s.i, s.g, s.gc,]
+      },
+    ]
+    return estabelecimentos;
   }
+
 
 }
