@@ -1,76 +1,97 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
 
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Racioncínio Computacional</title>
 
-	<title>Racioncínio Computacional</title>
+    <link rel="stylesheet" href="css/reveal.css" />
+    <link rel="stylesheet" href="css/theme/league.css" />
+    <link rel="stylesheet" href="css/custom.css" />
 
-	<link rel="stylesheet" href="css/reveal.css">
-	<link rel="stylesheet" href="css/theme/league.css">
-	<link rel="stylesheet" href="css/custom.css">
+    <!-- Theme used for syntax highlighting of code -->
+    <link rel="stylesheet" href="lib/css/zenburn.css" />
 
-	<!-- Theme used for syntax highlighting of code -->
-	<link rel="stylesheet" href="lib/css/zenburn.css">
+    <!-- Printing and PDF exports -->
+    <script>
+      var link = document.createElement("link");
+      link.rel = "stylesheet";
+      link.type = "text/css";
+      link.href = window.location.search.match(/print-pdf/gi)
+        ? "css/print/pdf.css"
+        : "css/print/paper.css";
+      document.getElementsByTagName("head")[0].appendChild(link);
+    </script>
+  </head>
 
-	<!-- Printing and PDF exports -->
-	<script>
-		var link = document.createElement('link');
-		link.rel = 'stylesheet';
-		link.type = 'text/css';
-		link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
-		document.getElementsByTagName('head')[0].appendChild(link);
-	</script>
-</head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+        <section>
+          <h3>
+            Este painel:
+            <a shadow-sm yellow href="http://bit.ly/rclegal">bit.ly/rclegal</a>
+          </h3>
+          <ol>
+            <li>
+              <a href="aulas.html">Lista de Aulas</a>
+            </li>
+            <li>
+              <a href="atividades.html">Lista de Atividades</a>
+            </li>
+            <li>
+              <a
+                href="https://docs.google.com/spreadsheets/d/1V5XDEYNXoFUPIbfsO6b72G0JmwrfEU7pNymQUX95gz0/edit?usp=sharing"
+                >Placar do Jogo</a
+              >
+            </li>
+            <li>
+              <a href="https://board.net/p/rclegal">Quadro</a>
+            </li>
+            <!-- <li><a yellow href="aviso-professor-dodoi.html">Instruções para 29/06</a></li> -->
+          </ol>
+          <br />
+          <br />
+          <h5>
+            "O futuro dependerá daquilo que fizermos no presente" – Gandhi
+          </h5>
+          <h5>
+            "A motivação é uma porta que se abre por dentro" – Mario Sergio
+            Cortella
+          </h5>
+          <h5>
+            "Ter sucesso é falhar repetidamente, mas sem perder o entusiasmo" –
+            Winston Churchill, político
+          </h5>
+        </section>
+      </div>
+    </div>
 
-<body>
-	<div class="reveal">
-		<div class="slides">
-			<section>
-				<h3>Este painel:
-					<a shadow-sm yellow href="http://bit.ly/rclegal">bit.ly/rclegal</a>
-				</h3>
-				<ol>
-					<li>
-						<a href="aulas.html">Lista de Aulas (Aula de 16/07 Adicionada)</a>
-					</li>
-					<li>
-						<a href="atividades.html">Lista de Atividades</a>
-					</li>
-					<li>
-						<a href="https://docs.google.com/spreadsheets/d/1V5XDEYNXoFUPIbfsO6b72G0JmwrfEU7pNymQUX95gz0/edit?usp=sharing">Placar do Jogo</a>
-					</li>
-					<li>
-						<a href="https://board.net/p/rclegal">Quadro</a>
-					</li>
-					<!-- <li><a yellow href="aviso-professor-dodoi.html">Instruções para 29/06</a></li> -->
-				</ol>
-				<br>
-					<br>
-				<h5>"O futuro dependerá daquilo que fizermos no presente" – Gandhi</h5>
-				<h5>"A motivação é uma porta que se abre por dentro" – Mario Sergio Cortella</h5>
-				<h5>"Ter sucesso é falhar repetidamente, mas sem perder o entusiasmo" – Winston Churchill, político</h5>
-			</section>
-		</div>
-	</div>
+    <script src="lib/js/head.min.js"></script>
+    <script src="js/reveal.js"></script>
 
-	<script src="lib/js/head.min.js"></script>
-	<script src="js/reveal.js"></script>
-
-	<script>
-		// More info about config & dependencies:
-		// - https://github.com/hakimel/reveal.js#configuration
-		// - https://github.com/hakimel/reveal.js#dependencies
-		Reveal.initialize({
-			dependencies: [
-				{ src: 'plugin/markdown/marked.js' },
-				{ src: 'plugin/markdown/markdown.js' },
-				{ src: 'plugin/notes/notes.js', async: true },
-				{ src: 'plugin/highlight/highlight.js', async: true, callback: function () { hljs.initHighlightingOnLoad(); } }
-			]
-		});
-	</script>
-</body>
-
+    <script>
+      // More info about config & dependencies:
+      // - https://github.com/hakimel/reveal.js#configuration
+      // - https://github.com/hakimel/reveal.js#dependencies
+      Reveal.initialize({
+        dependencies: [
+          { src: "plugin/markdown/marked.js" },
+          { src: "plugin/markdown/markdown.js" },
+          { src: "plugin/notes/notes.js", async: true },
+          {
+            src: "plugin/highlight/highlight.js",
+            async: true,
+            callback: function() {
+              hljs.initHighlightingOnLoad();
+            }
+          }
+        ]
+      });
+    </script>
+  </body>
 </html>

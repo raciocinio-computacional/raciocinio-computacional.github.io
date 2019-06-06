@@ -1,62 +1,71 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
 
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Racioncínio Computacional</title>
 
-	<title>Racioncínio Computacional</title>
+    <link rel="stylesheet" href="css/reveal.css" />
+    <link rel="stylesheet" href="css/theme/league.css" />
+    <link rel="stylesheet" href="css/custom.css" />
 
-	<link rel="stylesheet" href="css/reveal.css">
-	<link rel="stylesheet" href="css/theme/league.css">
-	<link rel="stylesheet" href="css/custom.css">
+    <!-- Theme used for syntax highlighting of code -->
+    <link rel="stylesheet" href="lib/css/zenburn.css" />
 
-	<!-- Theme used for syntax highlighting of code -->
-	<link rel="stylesheet" href="lib/css/zenburn.css">
+    <!-- Printing and PDF exports -->
+    <script>
+      var link = document.createElement("link");
+      link.rel = "stylesheet";
+      link.type = "text/css";
+      link.href = window.location.search.match(/print-pdf/gi)
+        ? "css/print/pdf.css"
+        : "css/print/paper.css";
+      document.getElementsByTagName("head")[0].appendChild(link);
+    </script>
+  </head>
 
-	<!-- Printing and PDF exports -->
-	<script>
-		var link = document.createElement('link');
-		link.rel = 'stylesheet';
-		link.type = 'text/css';
-		link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
-		document.getElementsByTagName('head')[0].appendChild(link);
-	</script>
-</head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+        <section>
+          <p><a href="aula1.html">Aula 1 - 06/06/2019</a></p>
+          <!-- <p><a href="aula2.html">Aula 2 - 29/06/2018</a></p> -->
+          <!-- <p><a href="aula0407.html">Aula 2 - 07/06/2018</a></p>
+          <p><a href="aula0507.html">Aula 3 - 10/06/2018</a></p>
+          <p><a href="aula0907.html">Aula 7 - 09/07/2018</a></p>
+          <p><a href="aula1007.html">Aula 8 - 10/07/2018</a></p>
+          <p><a href="aula1107.html">Aula 9 - 11/07/2018</a></p>
+          <p><a href="aula1207.html">Aula 10 - 12/07/2018</a></p>
+          <p><a href="aula1607.html">Aula 12 - 16/07/2018</a></p> -->
+        </section>
+      </div>
+    </div>
 
-<body>
-	<div class="reveal">
-		<div class="slides">
-			<section>
-				<p><a href="aula1.html">Aula 1 - 28/06/2018</a></p>
-				<!-- <p><a href="aula2.html">Aula 2 - 29/06/2018</a></p> -->
-				<p><a href="aula0407.html">Aula 4 - 04/07/2018</a></p>
-				<p><a href="aula0507.html">Aula 5 - 05/07/2018</a></p>
-				<p><a href="aula0907.html">Aula 7 - 09/07/2018</a></p>				
-				<p><a href="aula1007.html">Aula 8 - 10/07/2018</a></p>				
-				<p><a href="aula1107.html">Aula 9 - 11/07/2018</a></p>				
-				<p><a href="aula1207.html">Aula 10 - 12/07/2018</a></p>				
-				<p><a href="aula1607.html">Aula 12 - 16/07/2018</a></p>								
-			</section>
-		</div>
-	</div>
+    <script src="lib/js/head.min.js"></script>
+    <script src="js/reveal.js"></script>
 
-	<script src="lib/js/head.min.js"></script>
-	<script src="js/reveal.js"></script>
-
-	<script>
-		// More info about config & dependencies:
-		// - https://github.com/hakimel/reveal.js#configuration
-		// - https://github.com/hakimel/reveal.js#dependencies
-		Reveal.initialize({
-			dependencies: [
-				{ src: 'plugin/markdown/marked.js' },
-				{ src: 'plugin/markdown/markdown.js' },
-				{ src: 'plugin/notes/notes.js', async: true },
-				{ src: 'plugin/highlight/highlight.js', async: true, callback: function () { hljs.initHighlightingOnLoad(); } }
-			]
-		});
-	</script>
-</body>
-
+    <script>
+      // More info about config & dependencies:
+      // - https://github.com/hakimel/reveal.js#configuration
+      // - https://github.com/hakimel/reveal.js#dependencies
+      Reveal.initialize({
+        dependencies: [
+          { src: "plugin/markdown/marked.js" },
+          { src: "plugin/markdown/markdown.js" },
+          { src: "plugin/notes/notes.js", async: true },
+          {
+            src: "plugin/highlight/highlight.js",
+            async: true,
+            callback: function() {
+              hljs.initHighlightingOnLoad();
+            }
+          }
+        ]
+      });
+    </script>
+  </body>
 </html>
